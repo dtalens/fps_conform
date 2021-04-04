@@ -20,7 +20,7 @@ No. For the video this is done losslessly without re-encoding. The duration will
 
 Yes. For the audio it is changing the tempo. This means the pitch is adjusted accordingly to match the new speed. In other words, there should be little perceptible difference in pitch between the original and the conformed one. This is a lossy process.
 
-The audio is re-encoded with Opus at 48000Hz/128K. This is actually very good quality for an Opus file.
+The audio is re-encoded with AC3 at 48000Hz/320K.
 
 ## Requirements
 
