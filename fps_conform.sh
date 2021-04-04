@@ -76,7 +76,7 @@ function CONVERT_AUD () {
     layout="stereo"
   fi
 
-  ffmpeg -y -v error -i "$1" -c:a libopus -b:a 128k -filter:a "atempo=$TEMPO,aformat=channel_layouts=$layout" -vn "$OUTPUT_AUD/$OUTPUT_FILE"
+  ffmpeg -y -v error -i "$1" -c:a ac3 -b:a 320k -filter:a "atempo=$TEMPO,aformat=channel_layouts=$layout" -vn "$OUTPUT_AUD/$OUTPUT_FILE"
 }
 
 # Convert subtitles to desired length
